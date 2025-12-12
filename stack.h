@@ -1,7 +1,7 @@
 #ifndef STACK_H
 #define STACK_H
 #include <stdbool.h> 
-
+#define S_STUDENT "202413546 최우수"
 typedef int Item;
 typedef struct stack {
 Item * contents;
@@ -18,4 +18,5 @@ Item pop(Stack *s);
 Item peek(Stack *s);
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
+
 #endif
